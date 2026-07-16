@@ -181,7 +181,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
     githubUrl: "https://github.com/rupesh-udayagiri-7/Portfolio",
-    liveUrl: "https://udayagiri-rupesh.vercel.app",
+    liveUrl: "https://my-portfolio-one-red-16.vercel.app",
     category: "web"
   }
 ];
