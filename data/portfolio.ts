@@ -61,33 +61,32 @@ export const personalInfo = {
     "Problem Solver",
     "Open to Internships"
   ],
-  bio: "I am a passionate Computer Science Engineering student who enjoys building scalable web applications, AI-powered solutions, and solving real-world problems through software development. I continuously improve my programming, problem-solving, and development skills to become an industry-ready Software Engineer.",
+  bio: "Final-year Computer Science and Engineering student and OCI AI Foundations Associate with hands-on experience building full-stack web apps, NLP-driven tools, and computer-vision systems. Skilled in Python, React, Django REST Framework, Flask, Data Structures and Algorithms, OOP, and DBMS. Proven ability to design, build, and deploy full-stack, ML-integrated platforms that measurably reduce manual effort. Seeking a Software Developer, Python Developer, or Software Engineering Internship role.",
   aboutPoints: [
-    "Final Year B.Tech CSE Student",
-    "Passionate about Software Development",
-    "Interested in Artificial Intelligence",
-    "Learning Full Stack Development",
-    "Strong interest in Problem Solving and DSA",
-    "Quick Learner & Team Player",
-    "Always willing to learn new technologies"
+    "Final Year B.Tech CSE Student at KITS Akshar Institute of Technology",
+    "OCI AI Foundations Associate certified",
+    "Hands-on experience in NLP & Computer Vision (DeepFace, OpenCV, spaCy)",
+    "Full-stack development experience with Django REST Framework, Flask & React",
+    "Strong foundation in Data Structures, Algorithms, OOP, and DBMS",
+    "Quick learner, team collaborator, and problem-solver"
   ],
   email: "udayagirirupesh7990@gmail.com",
   phone: "+91 99513 17195",
-  address: "Naidupeta,Pothuru(Post),Guntur-522005, Andhra Pradesh",
+  address: "Guntur, Andhra Pradesh, India",
   resumeUrl: "/assets/resume.pdf",
   resumeMeta: {
-    version: "v2.4",
-    size: "184 KB",
-    atsScore: "92/100",
+    version: "v2.5",
+    size: "85 KB",
+    atsScore: "95/100",
     lastUpdated: "July 2026"
   }
 };
 
 export const achievements: Achievement[] = [
   { label: "Projects Completed", value: 5, suffix: "+" },
-  { label: "Coding Problems Solved", value: 100, suffix: "+" },
+  { label: "Coding Problems Solved", value: 350, suffix: "+" },
   { label: "Certificates Earned", value: 10, suffix: "+" },
-  { label: "GitHub Repositories", value: 5, suffix: "+" }
+  { label: "GitHub Repositories", value: 24, suffix: "+" }
 ];
 
 export const skillCategories: SkillCategory[] = [
@@ -95,42 +94,51 @@ export const skillCategories: SkillCategory[] = [
     title: "Programming Languages",
     skills: [
       { name: "Python", level: 90 },
-      { name: "Java", level: 80 },
       { name: "JavaScript", level: 85 },
-      { name: "C", level: 75 },
       { name: "SQL", level: 80 }
     ]
   },
   {
     title: "Frontend",
     skills: [
+      { name: "React.js", level: 88 },
+      { name: "Vite", level: 85 },
       { name: "HTML", level: 95 },
-      { name: "CSS", level: 90 },
-      { name: "React", level: 85 },
-      { name: "Next.js", level: 80 }
+      { name: "CSS", level: 90 }
     ]
   },
   {
-    title: "Backend",
+    title: "Backend & Frameworks",
     skills: [
-      { name: "Node.js", level: 78 },
-      { name: "Express.js", level: 80 }
+      { name: "Django", level: 85 },
+      { name: "Django REST Framework", level: 85 },
+      { name: "Flask", level: 80 },
+      { name: "RESTful APIs", level: 85 }
     ]
   },
   {
-    title: "Database",
+    title: "Databases",
     skills: [
-      { name: "MySQL", level: 85 },
       { name: "MongoDB", level: 80 },
-      { name: "PostgreSQL", level: 75 }
+      { name: "SQLite", level: 85 },
+      { name: "MySQL", level: 80 }
     ]
   },
   {
-    title: "Tools & DevOps",
+    title: "Tools & Platforms",
     skills: [
       { name: "Git", level: 90 },
       { name: "GitHub", level: 90 },
-      { name: "VS Code", level: 95 }
+      { name: "VS Code", level: 95 },
+      { name: "GitHub Pages", level: 80 }
+    ]
+  },
+  {
+    title: "Cloud Computing",
+    skills: [
+      { name: "Oracle Cloud Infrastructure (OCI)", level: 80 },
+      { name: "OCI AI Services", level: 80 },
+      { name: "Core Cloud Concepts", level: 85 }
     ]
   }
 ];
@@ -138,49 +146,44 @@ export const skillCategories: SkillCategory[] = [
 export const projects: Project[] = [
   {
     id: "ai-resume-analyzer",
-    title: "AI Resume Analyzer",
-    description: "An automated intelligence resume scanning application analyzing resumes against custom job descriptions using advanced LLM capabilities.",
+    title: "AI-Powered Resume Analyzer & ATS Scoring Platform",
+    description: "A full-stack resume analysis platform parsing PDF/DOCX resumes and benchmarking them against job descriptions.",
     details: [
-      "Upload Resumes in PDF format",
-      "Calculates matching ATS Score",
-      "Conducts full resume and text structure analysis",
-      "Suggests missing industry-specific skills",
-      "Provides AI-driven improvement feedback"
+      "Built a full-stack resume analysis platform (React/Vite frontend, Django REST Framework backend) that parses PDF/DOCX resumes and benchmarks them against job descriptions using TF-IDF vectorization and cosine similarity.",
+      "Engineered an NLP-driven skill-matching engine with spaCy to extract technical skills, surface matched vs. missing keywords, and calculate a rule-based ATS compatibility score, exposed via 4 REST API endpoints.",
+      "Extended the platform with a resume-builder wizard, a job-role recommendation engine, and a 60-question placement-prep module, totaling 5,000+ lines of code."
     ],
-    tech: ["Next.js", "TypeScript", "OpenAI APIs", "MongoDB", "Tailwind CSS"],
+    tech: ["React", "Vite", "Django REST Framework", "SQLite", "spaCy", "scikit-learn", "Axios"],
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&auto=format&fit=crop&q=60",
     githubUrl: "https://github.com/rupesh-udayagiri-7/Ai-Resume-Analyzer",
-    liveUrl: "https://ai-resume-analyzer-demo.vercel.app",
     category: "ai"
   },
   {
     id: "smart-voting",
-    title: "Smart Voting System",
-    description: "A secure web-based voting portal utilizing multiple biometric authentication mechanisms to prevent election fraud.",
+    title: "Smart Voting System with Facial Recognition",
+    description: "A secure online voting platform utilizing facial recognition verification to enforce single vote policies.",
     details: [
-      "Integrated Aadhaar API verification simulation",
-      "Face Recognition using convolutional neural networks",
-      "Fingerprint verification interface mock",
-      "End-to-end secure online voting ledger"
+      "Developed a secure online voting platform (Flask + MongoDB) that uses DeepFace facial recognition to verify voter identity and enforce one-vote-per-person before ballot casting.",
+      "Built an admin panel for voter/contestant management, with real-time vote tallying visualized through interactive charts.",
+      "Implemented face verification using VGG-Face embeddings with configurable distance-threshold matching to prevent duplicate or fraudulent votes."
     ],
-    tech: ["Python", "OpenCV", "Flask", "MySQL", "Machine Learning"],
+    tech: ["Python", "Flask", "MongoDB", "DeepFace", "OpenCV"],
     image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&auto=format&fit=crop&q=60",
     githubUrl: "https://github.com/rupesh-udayagiri-7/Smart-voting-System",
     category: "other"
   },
   {
     id: "portfolio-website",
-    title: "Modern 3D Portfolio Website",
-    description: "A premium glassmorphic portfolio highlighting projects, coding performance, and educational background with interactive features.",
+    title: "Personal Portfolio Website",
+    description: "A professional responsive Next.js portfolio website showcasing projects, skills, coding profiles, and resume.",
     details: [
-      "Light/dark mode system state persistence",
-      "Framer Motion animations and transitions",
-      "Fully responsive mobile-friendly menu layout",
-      "Automated ATS resume download counter integration"
+      "Rebuilt personal portfolio as a full Next.js/React application with TypeScript and Tailwind CSS, replacing the earlier static HTML/CSS version.",
+      "Structured the UI with reusable components and custom React hooks, adding Framer Motion animations and an EmailJS-powered contact form.",
+      "Deployed the site on Vercel for fast, publicly accessible hosting."
     ],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "EmailJS"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
-    githubUrl: "https://github.com/rupesh-udayagiri-7/Portfolio",
+    githubUrl: "https://github.com/rupesh-udayagiri-7/My-portfolio",
     liveUrl: "https://my-portfolio-one-red-16.vercel.app",
     category: "web"
   }
@@ -189,27 +192,27 @@ export const projects: Project[] = [
 export const certifications: Certification[] = [
   {
     id: "oci-ai-foundations",
-    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    title: "Oracle Cloud Infrastructure (OCI) 2025 Certified AI Foundations Associate",
     issuer: "Oracle University",
-    date: "August 20, 2025",
+    date: "2025",
     image: "/assets/oracle_cert.png",
     verifyUrl: "https://education.oracle.com"
   },
   {
     id: "python-automation",
-    title: "Python Programming & Automation Internship",
-    issuer: "Blackbuck Engineers",
-    date: "July 26, 2025",
+    title: "Python Automation Certification",
+    issuer: "Blackbucks Team",
+    date: "2025",
     image: "/assets/python_cert.png",
     verifyUrl: "https://blackbuckengineers.com"
   },
   {
-    id: "codegnan-portfolio-workshop",
-    title: "Building a Portfolio Workshop",
-    issuer: "Codegnan IT Solutions",
-    date: "November 2, 2025",
+    id: "eda-certification",
+    title: "Exploratory Data Analysis Certification",
+    issuer: "FutureSkills Prime (NASSCOM IT-ITeS SSC)",
+    date: "2025",
     image: "/assets/codegnan_cert.png",
-    verifyUrl: "https://codegnan.com"
+    verifyUrl: "https://futureskillsprime.in"
   }
 ];
 
@@ -217,26 +220,23 @@ export const educationHistory: EducationItem[] = [
   {
     id: "btech-cse",
     degree: "Bachelor of Technology (B.Tech)",
-    field: "Computer Science and Engineering",
-    institution: "KITS AKSHAR INSTITUTE OF TECHNOLOGY",
-    duration: "2023 - 2027 (Expected)",
-    grade: "Pursuing (4th Year)"
+    field: "Computer Science & Engineering",
+    institution: "KITS Akshar Institute of Technology",
+    duration: "Expected Graduation: 2027"
   },
   {
     id: "intermediate",
-    degree: "Board of Intermediate Education (12th Grade)",
-    field: "MPC (Mathematics, Physics, Chemistry)",
-    institution: "Narayana Junior College",
-    duration: "2021 - 2023",
-    grade: "6.1 Grade"
+    degree: "Intermediate (MPC)",
+    field: "Mathematics, Physics, Chemistry",
+    institution: "Narayana Junior College, Guntur",
+    duration: "2021 - 2023"
   },
   {
     id: "ssc",
-    degree: "Secondary School Certificate (10th Grade)",
+    degree: "Secondary Board Education (SSC)",
     field: "General Education",
-    institution: "ZP HIGH SCHOOL, YANAMADALA",
-    duration: "2020 - 2021",
-    grade: "7.5 Grade"
+    institution: "Z P High School, Yanamadala",
+    duration: "2020 - 2021"
   }
 ];
 

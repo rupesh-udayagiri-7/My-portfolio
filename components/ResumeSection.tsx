@@ -4,9 +4,9 @@ import React from 'react';
 import { personalInfo } from '../data/portfolio';
 import Card from './ui/Card';
 import Heading from './ui/Heading';
-import Button from './ui/Button';
 import { FileText, Download } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { motion } from 'framer-motion';
 
 export default function ResumeSection() {
   return (
@@ -39,10 +39,12 @@ export default function ResumeSection() {
 
           {/* 4. Action button placed after description, separated by a 24px (mt-6) spacing gap */}
           <div className="w-full flex justify-center pt-6 mt-6">
-            <a
+            <motion.a
               href={personalInfo.resumeUrl}
               download="Udayagiri_Rupesh_Resume.pdf"
-              className="inline-block"
+              className="inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-5 py-2.5 text-sm bg-[#FBBF24] text-[#0B1120] gap-2.5 download-btn text-xs font-extrabold uppercase tracking-widest shadow-lg shadow-amber-500/10 hover:shadow-amber-500/30 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
               onClick={() => {
                 confetti({
                   particleCount: 80,
@@ -52,13 +54,8 @@ export default function ResumeSection() {
                 });
               }}
             >
-              <Button 
-                variant="primary" 
-                className="gap-2.5 download-btn text-xs font-extrabold uppercase tracking-widest shadow-lg shadow-amber-500/10 hover:shadow-amber-500/30"
-              >
-                <Download className="w-4 h-4" /> Download Resume
-              </Button>
-            </a>
+              <Download className="w-4 h-4" /> Download Resume
+            </motion.a>
           </div>
         </div>
       </Card>

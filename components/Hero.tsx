@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
-import Button from './ui/Button';
 import { ArrowRight, Download, Send } from 'lucide-react';
 
 export default function Hero() {
@@ -106,21 +105,31 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full sm:w-auto"
         >
-          <a href="#projects" className="w-full sm:w-auto">
-            <Button variant="primary" size="lg" className="w-full gap-2">
-              View Projects <ArrowRight className="w-4 h-4" />
-            </Button>
-          </a>
-          <a href="#contact" className="w-full sm:w-auto">
-            <Button variant="secondary" size="lg" className="w-full gap-2 border border-card-border">
-              Contact Me <Send className="w-4 h-4" />
-            </Button>
-          </a>
-          <a href="#resume" className="w-full sm:w-auto">
-            <Button variant="ghost" size="lg" className="w-full gap-2 border border-dashed border-amber-500/30 text-amber-500 dark:text-[#FBBF24]">
-              Download Resume <Download className="w-4 h-4" />
-            </Button>
-          </a>
+          <motion.a
+            href="#projects"
+            className="w-full sm:w-auto inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-7 py-3.5 text-base bg-[#FBBF24] text-[#0B1120] shadow-lg shadow-amber-500/10 hover:shadow-amber-500/20 hover:bg-[#F59E0B] border-0 gap-2 cursor-pointer"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            View Projects <ArrowRight className="w-4 h-4" />
+          </motion.a>
+          <motion.a
+            href="#contact"
+            className="w-full sm:w-auto inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-7 py-3.5 text-base glass-card text-foreground hover:bg-slate-200/50 dark:hover:bg-slate-800/50 gap-2 border border-card-border cursor-pointer"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            Contact Me <Send className="w-4 h-4" />
+          </motion.a>
+          <motion.a
+            href={personalInfo.resumeUrl}
+            download="Udayagiri_Rupesh_Resume.pdf"
+            className="w-full sm:w-auto inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-7 py-3.5 text-base text-foreground hover:bg-slate-200 dark:hover:bg-slate-800 gap-2 border border-dashed border-amber-500/30 text-amber-500 dark:text-[#FBBF24] cursor-pointer"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            Download Resume <Download className="w-4 h-4" />
+          </motion.a>
         </motion.div>
 
         {/* Animated Mouse scroll indicator */}
