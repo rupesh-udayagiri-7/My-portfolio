@@ -73,7 +73,7 @@ export const personalInfo = {
   email: "udayagirirupesh7990@gmail.com",
   phone: "+91 99513 17195",
   address: "Guntur, Andhra Pradesh, India",
-  resumeUrl: "/assets/resume.pdf",
+  resumeUrl: "/assets/resume.pdf?v=2.5",
   resumeMeta: {
     version: "v2.5",
     size: "85 KB",

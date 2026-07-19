@@ -42,6 +42,8 @@ export default function ResumeSection() {
             <motion.a
               href={personalInfo.resumeUrl}
               download="Udayagiri_Rupesh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-5 py-2.5 text-sm bg-[#FBBF24] text-[#0B1120] gap-2.5 download-btn text-xs font-extrabold uppercase tracking-widest shadow-lg shadow-amber-500/10 hover:shadow-amber-500/30 cursor-pointer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}

@@ -124,6 +124,8 @@ export default function Hero() {
           <motion.a
             href={personalInfo.resumeUrl}
             download="Udayagiri_Rupesh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center font-medium rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#FBBF24] focus:ring-offset-2 px-7 py-3.5 text-base text-foreground hover:bg-slate-200 dark:hover:bg-slate-800 gap-2 border border-dashed border-amber-500/30 text-amber-500 dark:text-[#FBBF24] cursor-pointer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
